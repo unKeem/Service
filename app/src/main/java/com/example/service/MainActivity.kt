@@ -45,6 +45,7 @@ class MainActivity : AppCompatActivity() {
             val myBinder = ibinder as MyService.MyBinder
             myService = myBinder.getService()
             isService = true
+
                 Log.d("Service", "connected BindService")
 
                 myService.create("여기는 메인액티비티")
